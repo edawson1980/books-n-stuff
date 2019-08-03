@@ -20,4 +20,12 @@ class Media{
   toggleCheckOutStatus(){
     this._isCheckedOut = !this._isCheckedOut;
   }
+  //find average of ratings array:
+  getAverageRating(){
+    let sum = this.ratings.reduce(function(acc, rating){return acc + rating},0);
+    //acc = accumulator (how much to add each iteration).  rating = the next value in the array.  0 = initial value (where to start from).
+    let length = ratings.length;
+    let avg = sum/length;
+    return avg;
+  };
 }
