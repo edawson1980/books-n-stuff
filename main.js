@@ -27,5 +27,8 @@ class Media{
     let length = ratings.length;
     let avg = sum/length;
     return avg;
-  };
+  }
+  addRating(){
+    this.ratings.push(newRating);
+  }
 }
