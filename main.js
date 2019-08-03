@@ -31,4 +31,13 @@ class Media{
   addRating(){
     this.ratings.push(newRating);
   }
-}
+};
+//child of Media:
+class Book extends Media{
+  constructor(author, title, pages){
+    //super pulls properties from parent class
+    super(title);
+    this._author = author;
+    this._pages = pages;
+  }
+};
