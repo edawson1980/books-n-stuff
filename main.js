@@ -70,3 +70,6 @@ historyOfEverything.addRating(4);
 historyOfEverything.addRating(5);
 historyOfEverything.addRating(5);
 console.log(historyOfEverything.getAverageRating());
+
+//create new instance of Movie class:
+const speed = new Movie('Jan de Bont', 'Speed', 116);
