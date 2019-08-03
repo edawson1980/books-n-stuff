@@ -28,7 +28,7 @@ class Media{
     let avg = sum/length;
     return avg;
   }
-  addRating(){
+  addRating(newRating){
     this.ratings.push(newRating);
   }
 };
@@ -66,3 +66,7 @@ const historyOfEverything = new Book('Bill Bryson', 'A Short History of Nearly E
 //testing
 historyOfEverything.toggleCheckOutStatus();
 console.log(historyOfEverything.isCheckedOut); //if line 67 successful, prints 'true'
+historyOfEverything.addRating(4);
+historyOfEverything.addRating(5);
+historyOfEverything.addRating(5);
+console.log(historyOfEverything.getAverageRating());
